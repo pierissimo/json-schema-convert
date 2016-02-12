@@ -1,0 +1,96 @@
+{
+    "title": "Stock Schema",
+    "type": "object",
+    "properties": {
+        "exampleString": {
+            "type": "string"
+        },
+        "exampleArray": {
+            "type": "array",
+            "items": {
+                "title": "",
+                "type": "object",
+                "properties": {
+                    "anotherBacon": {
+                        "type": "string"
+                    },
+                    "bacon": {
+                        "type": "string"
+                    }
+                },
+                "required": []
+            }
+        },
+        "exampleNested": {
+            "title": "",
+            "type": "object",
+            "properties": {
+                "beer": {
+                    "type": "string"
+                },
+                "anotherBeer": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "anotherBeer"
+            ]
+        },
+        "accountId": {
+            "type": "string"
+        },
+        "active": {
+            "type": "boolean"
+        },
+        "name": {
+            "type": "string"
+        },
+        "lookup": {
+            "type": "string"
+        },
+        "description": {
+            "type": "string"
+        },
+        "unitCost": {
+            "type": "number"
+        },
+        "unitPrice": {
+            "type": "number"
+        },
+        "weight": {
+            "type": "number"
+        },
+        "code": {
+            "type": "string"
+        },
+        "stockLevel": {
+            "type": "number"
+        },
+        "requiredLevel": {
+            "type": "number"
+        },
+        "barcode": {
+            "type": "string"
+        },
+        "image": {
+            "type": "string"
+        },
+        "exampleRefField": {
+            "type": "string"
+        },
+        "_id": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "accountId",
+        "name",
+        "description",
+        "unitCost",
+        "unitPrice",
+        "weight",
+        "code",
+        "stockLevel",
+        "requiredLevel"
+    ]
+}
