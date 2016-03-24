@@ -1,0 +1,25 @@
+{
+    "title": "BoxCarrier Schema",
+    "type": "object",
+    "properties": {
+        "code": {
+            "type": "string"
+        },
+        "service": {
+            "type": "string"
+        },
+        "alias": {
+            "type": "string"
+        },
+        "serviceId": {
+            "type": "string"
+        },
+        "_id": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "code",
+        "service"
+    ]
+}

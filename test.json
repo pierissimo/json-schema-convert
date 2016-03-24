@@ -1,0 +1,270 @@
+{
+    "box": {
+        "title": "Box Schema",
+        "type": "object",
+        "properties": {
+            "accountId": {
+                "type": "string"
+            },
+            "wallId": {
+                "type": "string"
+            },
+            "number": {
+                "type": "number"
+            },
+            "qIndex": {
+                "type": "number"
+            },
+            "carrier": {
+                "title": "",
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "type": "string"
+                    },
+                    "service": {
+                        "type": "string"
+                    },
+                    "alias": {
+                        "type": "string"
+                    },
+                    "serviceId": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "code",
+                    "service"
+                ]
+            },
+            "shipmentId": {
+                "type": "string"
+            },
+            "sourceOrderId": {
+                "type": "string"
+            },
+            "orderId": {
+                "type": "string"
+            },
+            "itemId": {
+                "type": "string"
+            },
+            "status": {
+                "type": "string"
+            },
+            "clientName": {
+                "type": "string"
+            },
+            "itemBarcode": {
+                "type": "string"
+            },
+            "itemCount": {
+                "type": "number"
+            },
+            "expectedItemCount": {
+                "type": "number"
+            },
+            "componentCount": {
+                "type": "number"
+            },
+            "expectedComponentCount": {
+                "type": "number"
+            },
+            "boxType": {
+                "type": "string"
+            },
+            "items": [
+                {
+                    "type": "string"
+                }
+            ],
+            "itemDetails": [
+                {
+                    "type": "string"
+                }
+            ],
+            "products": [
+                {
+                    "title": "",
+                    "type": "object",
+                    "properties": {
+                        "componentId": {
+                            "type": "string"
+                        },
+                        "itemId": {
+                            "type": "string"
+                        },
+                        "quantity": {
+                            "type": "number"
+                        },
+                        "expectedQuantity": {
+                            "type": "number"
+                        },
+                        "barcode": {
+                            "type": "string"
+                        },
+                        "sku": {
+                            "type": "string"
+                        },
+                        "dispatchAlert": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "quantity",
+                        "expectedQuantity"
+                    ]
+                }
+            ],
+            "assemble": [
+                {
+                    "title": "",
+                    "type": "object",
+                    "properties": {
+                        "componentId": {
+                            "type": "string"
+                        },
+                        "qIndex": {
+                            "type": "number"
+                        },
+                        "scanned": {
+                            "type": "number"
+                        },
+                        "barcode": {
+                            "type": "string"
+                        }
+                    },
+                    "required": []
+                }
+            ],
+            "_id": {
+                "type": "string"
+            }
+        },
+        "required": [
+            "accountId",
+            "number",
+            "status"
+        ]
+    },
+    "boxCarrier": {
+        "title": "BoxCarrier Schema",
+        "type": "object",
+        "properties": {
+            "code": {
+                "type": "string"
+            },
+            "service": {
+                "type": "string"
+            },
+            "alias": {
+                "type": "string"
+            },
+            "serviceId": {
+                "type": "string"
+            },
+            "_id": {
+                "type": "string"
+            }
+        },
+        "required": [
+            "code",
+            "service"
+        ]
+    },
+    "stock": {
+        "title": "Stock Schema",
+        "type": "object",
+        "properties": {
+            "exampleString": {
+                "type": "string"
+            },
+            "exampleArray": [
+                {
+                    "title": "",
+                    "type": "object",
+                    "properties": {
+                        "anotherBacon": {
+                            "type": "string"
+                        },
+                        "bacon": {
+                            "type": "string"
+                        }
+                    },
+                    "required": []
+                }
+            ],
+            "exampleNested": {
+                "title": "",
+                "type": "object",
+                "properties": {
+                    "beer": {
+                        "type": "string"
+                    },
+                    "anotherBeer": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "anotherBeer"
+                ]
+            },
+            "accountId": {
+                "type": "string"
+            },
+            "active": {
+                "type": "boolean"
+            },
+            "name": {
+                "type": "string"
+            },
+            "lookup": {
+                "type": "string"
+            },
+            "description": {
+                "type": "string"
+            },
+            "unitCost": {
+                "type": "number"
+            },
+            "unitPrice": {
+                "type": "number"
+            },
+            "weight": {
+                "type": "number"
+            },
+            "code": {
+                "type": "string"
+            },
+            "stockLevel": {
+                "type": "number"
+            },
+            "requiredLevel": {
+                "type": "number"
+            },
+            "barcode": {
+                "type": "string"
+            },
+            "image": {
+                "type": "string"
+            },
+            "exampleRefField": {
+                "type": "string"
+            },
+            "_id": {
+                "type": "string"
+            }
+        },
+        "required": [
+            "accountId",
+            "name",
+            "description",
+            "unitCost",
+            "unitPrice",
+            "weight",
+            "code",
+            "stockLevel",
+            "requiredLevel"
+        ]
+    }
+}

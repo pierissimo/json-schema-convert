@@ -1,0 +1,115 @@
+{
+    "title": "User Schema",
+    "type": "object",
+    "properties": {
+        "authId": {
+            "type": "string"
+        },
+        "active": {
+            "type": "boolean"
+        },
+        "name": {
+            "type": "string"
+        },
+        "email": {
+            "type": "string"
+        },
+        "username": {
+            "type": "string"
+        },
+        "password": {
+            "type": "string"
+        },
+        "admin": {
+            "type": "boolean"
+        },
+        "service": {
+            "type": "boolean"
+        },
+        "hpUserId": {
+            "type": "string"
+        },
+        "defaultAccount": {
+            "type": "string"
+        },
+        "productionUser": {
+            "type": "boolean"
+        },
+        "smartCardNumber": {
+            "type": "string"
+        },
+        "homepage": {
+            "type": "string"
+        },
+        "homestate": {
+            "type": "string"
+        },
+        "accountRoles": {
+            "type": "array",
+            "items": {
+                "title": "",
+                "type": "object",
+                "properties": {
+                    "accountId": {
+                        "type": "string"
+                    },
+                    "id": {
+                        "type": "string"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "role": {
+                        "type": "string"
+                    },
+                    "token": {
+                        "type": "string"
+                    },
+                    "secret": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "id"
+                ]
+            }
+        },
+        "accounts": {
+            "type": "array",
+            "items": {
+                "title": "",
+                "type": "object",
+                "properties": {
+                    "type": {},
+                    "ref": {}
+                },
+                "required": []
+            }
+        },
+        "invitations": {
+            "type": "array",
+            "items": {
+                "title": "",
+                "type": "object",
+                "properties": {
+                    "invitationId": {
+                        "type": "string"
+                    },
+                    "date": {
+                        "type": "string"
+                    }
+                },
+                "required": []
+            }
+        },
+        "_id": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "name",
+        "email",
+        "username",
+        "password"
+    ]
+}

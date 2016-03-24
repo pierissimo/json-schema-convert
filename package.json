@@ -5,7 +5,12 @@
   "main": "index.js",
   "scripts": {},
   "author": "Piero Maltese maltesepiero@gmail.com",
-  "license": "ISC",
+  "homepage": "https://github.com/pierissimo/json-schema-convert",
+  "repository": {
+    "url": "https://github.com/pierissimo/json-schema-convert",
+    "type": "git"
+  },
+  "license": "MIT",
   "bin": {
     "json-schema-convert": "./index.js"
   },
